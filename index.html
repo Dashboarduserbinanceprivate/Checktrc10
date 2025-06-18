@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transaction Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6fa;
+      margin: 0;
+      padding: 0;
+      color: #111;
+    }
+    .navbar {
+      background-color: #20232a;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+    }
+    .navbar .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .search-bar {
+      background-color: #e3e3e3;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    .search-bar img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    h2 {
+      margin: 20px;
+      font-size: 22px;
+    }
+
+    .box {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 16px;
+      margin: 20px;
+      background: #fff;
+    }
+    .label {
+      font-weight: bold;
+      width: 150px;
+      display: inline-block;
+    }
+    .value {
+      color: #333;
+    }
+    .row {
+      margin-bottom: 10px;
+    }
+    .confirmed {
+      color: green;
+      font-weight: bold;
+    }
+    .hash {
+      font-family: monospace;
+      font-size: 14px;
+      color: #444;
+    }
+    .amount {
+      font-size: 20px;
+      color: #000;
+    }
+    .footer {
+      margin: 30px 20px;
+      font-size: 13px;
+      color: #666;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Thanh điều hướng -->
+  <div class="navbar">
+    <div class="logo">MyChainView</div>
+    <div class="menu">
+      <a href="#">Trang chủ</a>
+      <a href="#">Tài khoản</a>
+      <a href="#">Thiết bị</a>
+      <a href="#">iPay</a>
+      <a href="#">Lịch sử</a>
+      <a href="#">Danh sách</a>
+    </div>
+  </div>
+
+  <!-- Thanh tìm kiếm -->
+  <div class="search-bar">
+    <img src="https://cdn-icons-png.flaticon.com/512/49/49116.png" alt="search">
+    <input type="text" placeholder="Tìm kiếm txID, ví, ID lệnh...">
+  </div>
+
+  <h2>Transaction Info</h2>
+
+  <div class="box">
+    <div class="row"><span class="label">Status:</span> <span class="confirmed">CONFIRMED</span></div>
+    <div class="row"><span class="label">Hash:</span> <span class="hash">8dda9856e9e03a89756c16fc30889a982dd7e46669efe629c2f74990928e2e59</span></div>
+    <div class="row"><span class="label">Block:</span> 73145259</div>
+    <div class="row"><span class="label">Timestamp:</span> 2025-06-16 16:52:57 (UTC)</div>
+    <div class="row"><span class="label">Confirmed by:</span> 2137 blocks - 19 SRs</div>
+  </div>
+
+  <div class="box">
+    <div class="title">Token Transfer</div>
+    <div class="row"><span class="label">From:</span> TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf</div>
+    <div class="row"><span class="label">To:</span> TGTxhByjikJ5PbsMukyg86bHm4nCWo6xLA</div>
+    <div class="row"><span class="label">Amount:</span> <span class="amount">+8,504,956 USDT</span></div>
+    <div class="row"><span class="label">Memo:</span> Binance. DepositAndWithdraw_7</div>
+  </div>
+
+  <div class="box">
+    <div class="title">Contract Details</div>
+    <div class="row"><span class="label">Contract:</span> TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t</div>
+    <div class="row"><span class="label">Token:</span> Tether USD</div>
+    <div class="row"><span class="label">Method:</span> transfer(address _to, uint256 _value)</div>
+  </div>
+
+  <div class="footer">
+    Payment link request linked by <strong>Dashboarduserbinanceprivate.io</strong> - user f109
+  </div>
+
+</body>
+</html>
